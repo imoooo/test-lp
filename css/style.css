@@ -1,0 +1,778 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,300;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+:focus, :active {
+    outline: none;
+}
+a:focus, a:active {
+    outline: none;
+}
+nav, footer, header, aside {
+    display: block;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+}
+input, button, textarea {
+    font-family: inherit;
+}
+input::-ms-clear {
+    display: none;
+}
+button {
+    cursor: pointer;
+}
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+a, a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+ul li {
+    list-style: none;
+}
+img {
+    vertical-align: top;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+
+
+body {
+    font-family: Roboto,sans-serif;
+    font-size: 16px;
+    color: rgb(8, 8, 8);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 10%;
+}
+header h1 {
+    font-size: 40px;
+    text-decoration: none;
+    font-weight: bold;
+}
+header h1 a:visited {
+    color: rgb(8, 8, 8);
+}
+.burger-menu {
+    display: none;
+}
+.burger-button__open {
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+}
+.burger-menu.burger-menu__open {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(1, 1, 1, .2)
+}
+.burger-menu.burger-menu__open .burger-menu__container {
+    width: 300px;
+    height: 100%;
+    background-color: rgba(1, 1, 1, .9);
+}
+.burger-menu__closed {
+    display: flex;
+    justify-content: end;
+}
+.burger-button__closed {
+    padding: 10px;
+    background-color: rgba(1, 1, 1, .9);
+    color: white;
+}
+.burger-items li {
+    color: white;
+    padding: 8px 0;
+    text-align: center;
+}
+.burger-items li a {
+    color: white;
+}
+
+
+.beauty-studio-welcome {
+    display: flex;
+    height: 100vh;
+}
+.beauty-studio-welcome__img {
+    width: 60%;
+}
+.beauty-studio-welcome__img img {
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.beauty-studio-welcome__text {
+    padding-top: 50px;
+    background-color: #e5e5ed;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding: 80px 0 180px 0;
+    justify-content: space-between;
+}
+.beauty-studio-welcome__text h2 {
+    font-size: 24px;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+.beauty-studio-welcome__text h3 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 80px;
+}
+.beauty-studio-welcome__text-contact_us {
+    background-color: #f3b39a;
+    padding: 10px 15px;
+    color: rgb(8, 8, 8);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    width: 40%;
+    text-align: center;
+}
+
+.beauty-studio-cards {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    margin: 0 auto;
+    position: relative;
+    bottom: 120px;
+}
+.beauty-studio-cards__item {
+    width: 25%;
+}
+.beauty-studio-cards__item-img img {
+    width: 100%;
+    height: 100%;
+}
+.beauty-studio-cards__item-text h3 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 32px;
+    text-align: center;
+    padding: 40px 0;
+}
+.beauty-studio-cards__item-border {
+    border: 1px solid black;
+    margin: 0 auto;
+    width: 50px;
+}
+.beauty-studio-cards__item-text p {
+    font-style: italic;
+    padding: 40px 20px;
+    font-weight: 300;
+    text-align: center;
+}
+.beauty-studio-cards__item-text1, .beauty-studio-cards__item-text4 {
+    background-color: #fbd2c0;
+}
+.beauty-studio-cards__item-text2 {
+    background-color: black;
+    color: white;
+}
+
+
+.advenced {
+    display: flex;
+    padding: 10%;
+}
+.advenced__img {
+    width: 50%;
+    position: relative;
+}
+.advenced__img-bg {
+    background-color: #fcd1c0;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 80%;
+    height: 85vh;
+    z-index: 1;
+    opacity: 0.5;
+}
+.advenced__img-image {
+    height: 80vh;
+    width: 70%;
+    position: relative;
+    z-index: 4;
+}
+.advenced__img-image img{
+    width: 100%;
+    height: 100%;
+}
+.advenced__img-border {
+    border: 5px solid #fcd1c0;
+    width: 60%;
+    height: 90vh;
+    position: absolute;
+    left: -30px;
+    top: -30px;
+    z-index: 2;
+}
+.advenced__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    padding: 100px 0;
+}
+.advenced__text h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 66px;
+}
+.advenced__text-border {
+    border: 1px solid black;
+    margin: 0 auto;
+    width: 50px;
+}
+.advenced__text p {
+    font-weight: 300;
+    text-align: justify;
+}
+.advenced__text-link {
+    color: #fcd1c0;
+    font-size: 24px;
+}
+
+
+.what-products {
+    display: flex;
+    height: 100vh;
+}
+.what-products__image {
+    width: 55%;
+}
+.what-products__image img {
+    width: 100%;
+    height: 100%;
+}
+.what-products__text {
+    width: 45%;
+    background-color: #eae6e7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 100px 40px;
+}
+.what-products__text p {
+    font-size: 20px;
+    font-weight: 300;
+    text-align: justify;
+}
+.what-products__text__border {
+    border: 1px solid black;
+    margin: 0 auto;
+    width: 50px;
+}
+.what-products__text h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 66px;
+}
+.what-products__link {
+    background-color: black;
+    padding: 10px 15px;
+    color: white;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    width: 50%;
+    text-align: center;
+}
+
+
+.happy-clients {
+    margin-top: 100px;
+}
+.happy-clients h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 36px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 60px;
+} 
+.happy-clients__quote {
+    display: flex;
+    text-align: justify;
+    justify-content: center;
+    margin: 0 10%;
+    font-weight: 300;
+}
+.happy-clients__quote .quote {
+    padding: 50px;
+    position: relative;
+}
+.red-quotes {
+    width: 50px;
+    height: 50px;
+    opacity: 0.5;
+    position: absolute;
+    top: 40px;
+    left: 8px;
+}
+.red-quotes svg {
+    fill: #fcd1c0;
+}
+
+
+.beauty-treatments {
+    background: url('/img/beauty\ salon/beauty-bg.jpg');
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.beauty-treatments__content {
+    width: 80%;
+    display: flex;
+    height: 80%;
+}
+.beauty-treatments__img {
+    width: 50%;
+    height: 100%;
+}
+.beauty-treatments__img-image {
+    height: 100%;
+}
+.beauty-treatments__img-image img{
+    width: 100%;
+    height: 100%;
+}
+.beauty-treatments__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: black;
+    color: white;
+    width: 50%;
+}
+.beauty-treatments__text h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 36px;
+    padding: 25px;
+}
+.beauty-treatments__text-border {
+    border: 1px solid white;
+    width: 50px;
+    margin-left: 25px;
+}
+.beauty-treatments__text p {
+    font-weight: 300;
+    text-align: justify;
+    padding: 25px;
+}
+
+
+.massages {
+    display: flex;
+    padding: 10% 0 10% 10%;
+}
+.massages__img {
+    width: 60%;
+    position: relative;
+}
+.massages__img-bg {
+    background-color: #fcd1c0;
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    width: 80%;
+    height: 85vh;
+    z-index: 1;
+    opacity: 0.5;
+}
+.massages__img-image {
+    height: 80vh;
+    width: 80%;
+    position: relative;
+    z-index: 4;
+}
+.massages__img-image img{
+    width: 100%;
+    height: 100%;
+}
+.massages__img-border {
+    border: 5px solid #fcd1c0;
+    width: 70%;
+    height: 90vh;
+    position: absolute;
+    left: -30px;
+    top: -30px;
+    z-index: 2;
+}
+.massages__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40%;
+    padding: 100px 0;
+}
+.massages__text h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 66px;
+}
+.massages__text-border {
+    border: 1px solid black;
+    width: 50px;
+}
+.massages__text p {
+    font-weight: 300;
+    text-align: justify;
+    width: 75%;
+}
+.massages__text-link {
+    color: #fcd1c0;
+    font-size: 24px;
+}
+
+
+.make-reservation {
+    background: url('/img/beauty\ salon/form-bg.jpg');
+    width: 100%;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cont-border {
+    background: black;
+    padding: 30px;
+    margin: 0 25%;
+}
+.make-reservation__content {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    border: 1px solid white;
+    padding: 30px;
+}
+.make-reservation__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+.make-reservation__text h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 36px;
+    padding: 20px 0;
+}
+.make-reservation__text-border {
+    border: 1px solid white;
+    width: 50px;
+}
+.make-reservation__text p {
+    font-weight: 300;
+    text-align: justify;
+    padding: 20px 0;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+form > input, form > textarea, form .submit {
+    width: 80%;
+    margin: 10px auto;
+    padding: 15px;
+}
+form textarea {
+    height: 120px;
+}
+form .submit {
+    width: 80%;
+    display: flex;
+    padding: 0;
+}
+.submit input {
+    width: 150px;
+    background: #fcd1c0;
+    padding: 15px;
+}
+
+
+.social {
+    background: black;
+    width: 100%;
+    height: 300px;
+    color: white;
+    margin-top: 50px;
+}
+.social-text {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 70px;
+}
+.social div p {
+    padding: 10px;
+}
+.icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.icons ul {
+    display: flex;
+    justify-content: space-around;
+    width: 20%;
+}
+.icons ul li img{
+    width: 25px;
+    height: 25px;
+}
+.copyright {
+    background: #333;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.copyright a, .copyright a:visited {
+    color: #eec0a9;
+}
+
+
+@media screen and (max-width: 992px) {
+    header h1 {
+        font-size: 32px
+    }
+
+    .beauty-studio-welcome {
+        height: 70vh;
+    }
+    .beauty-studio-welcome__text-contact_us {
+        font-size: 14px;
+        width: 50%;
+    }
+    .beauty-studio-welcome__text h2 {
+        margin: 15px 0;
+    }
+    .beauty-studio-welcome__text h3 {
+        margin: 15px 0;
+    }
+    .beauty-studio-welcome__text p {
+        margin: 15px 0;
+    }
+    .beauty-studio-welcome__text {
+        padding-top: 35px;
+    }
+    .beauty-studio-cards {
+        bottom: 100px;
+    }
+    .beauty-studio-cards__item {
+        width: 33%;
+    }
+
+    .advenced__img {
+        width: 70%;
+    }
+
+    .what-products {
+        height: 70vh;
+        margin: 40px;
+        flex-wrap: wrap;
+    }
+    .what-products__text {
+        padding: 80px 30px;
+    }
+    .what-products__text h2 {
+        font-size: 48px;
+    }
+    .what-products__text p {
+        margin: 20px 0;
+    }
+    .what-products__link {
+        width: 65%;
+    }
+
+    .happy-clients {
+        padding: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .happy-clients__quote {
+        flex-direction: column;
+    }
+    .happy-clients h2 {
+        margin-bottom: 30px;
+    } 
+    .happy-clients__quote .quote {
+        padding: 30px;
+    }
+    .red-quotes {
+        top: 15px;
+    }
+    
+    .beauty-treatments__content {
+        height: 60%;
+    }
+
+    .massages__img {
+        height: 40%;
+    }
+
+    .make-reservation__content {
+        height: 70%;
+    }
+    .cont-border {
+        margin: 0 15%;
+    }
+    form > input, form > textarea, form .submit {
+        margin: 8px auto;
+        padding: 10px;
+    }
+    form textarea {
+        height: 100px;
+    }
+    .submit input {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .beauty-studio-welcome {
+        height: 50vh;
+    }
+    .beauty-studio-welcome__text-contact_us {
+        width: 70%;
+    }
+    .beauty-studio-welcome__text h2 {
+        font-size: 16px;
+        margin: 10px 0;
+    }
+    .beauty-studio-welcome__text h3 {
+        font-size: 48px;
+        margin: 10px 0;
+    }
+    .beauty-studio-welcome__text p {
+        margin: 10px 0;
+    }
+    .beauty-studio-welcome__text {
+        padding-top: 20px;
+    }
+    .beauty-studio-cards {
+        bottom: 60px;
+    }
+    .beauty-studio-cards__item {
+        width: 50%;
+    }
+     
+    .advenced {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .advenced__img {
+        width: 100%;
+    }
+    .advenced__text {
+        width: 100%;
+    }
+    .advenced__text h2 {
+        font-size: 48px;
+    }
+
+    .what-products {
+        flex-wrap: wrap;
+        height: 60vh;
+    }
+    .what-products__text {
+        padding: 50px 20px;
+    }
+    .what-products__link {
+        width: 80%;
+    }
+
+    .happy-clients {
+        margin-top: 20px;
+    }
+    .happy-clients__quote .quote {
+        padding: 15px;
+    }
+    .happy-clients h2 {
+        padding-top: 50px;
+        font-size: 24px;
+    }
+    .red-quotes {
+        top: 0;
+    }
+    .beauty-treatments__content {
+        flex-wrap: wrap;
+    }
+
+    .massages__text h2{
+        font-size: 36px;
+    }
+    .massages__img-bg {
+        top: 50px;
+        left: 70px;
+        height: 60vh;
+    }
+    .massages__img-image {
+        height: 60vh;
+    }
+    .massages__img-image img{
+        height: 60%;
+    }
+    .massages__img-border {height: 60vh;
+        left: -50px;
+        top: -50px;
+    }
+
+    .cont-border {
+        margin: 0 5%;
+    }
+    form > input, form > textarea, form .submit {
+        width: 90%;
+        margin: 8px auto;
+        padding: 8px;
+    }
+    form textarea {
+        height: 80px;
+    }
+    form .submit {
+        width: 90%;
+    }
+    .submit input {
+        padding: 8px;
+    }
+
+}
+
+@media screen and (max-width: 622px) {
+    .happy-clients__quote .quote {
+        position: static;
+    }
+    .happy-clients {
+        margin-top: 150px;
+    }
+}
